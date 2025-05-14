@@ -2,14 +2,14 @@
 
 ### 📌 Indice
 
-1. [📖 Introduzione](#📖-1-introduzione)  
-2. [🧠 Modello di Dominio](#🧠-2-modello-di-dominio)  
-3. [✅ Requisiti Specifici](#✅-3-requisiti-specifici)  
+1. [📖 Introduzione](#-1-introduzione)  
+2. [🧠 Modello di Dominio](#--2-modello-di-dominio)  
+3. [✅ Requisiti Specifici](#3-requisiti-specifici)  
    - [3.1 Requisiti Funzionali](#31-requisiti-funzionali)    
    - [3.2 Requisiti Non Funzionali](#32-requisiti-non-funzionali)   
-4. [🔍 Analisi retrospettiva](#🔍-8-analisi-retrospettiva)  
+4. [🔍 Analisi retrospettiva](#🔍8-analisi-retrospettiva)  
    - [8.1 Sprint 0](#81-sprint-0)  
-5. [📁 Struttura cartelle/files principali progetto](#📁-struttura-cartellefiles-principali-progetto)  
+5. [📁 Struttura cartelle/files principali progetto](#struttura-cartellefiles-principali-progetto)  
 6. [📊 Stato attuale dello sviluppo](#📊-stato-attuale-dello-sviluppo)  
 
 ---
@@ -228,7 +228,7 @@ A tal fine, si individuano le seguenti _azioni correttive_ da mettere in atto.
 
 ---
 
-## 📁 Struttura cartelle/files principali progetto
+## Struttura cartelle/files principali progetto
 
 ```
 docs/
