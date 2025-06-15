@@ -439,7 +439,7 @@ Questo schema illustra i passaggi per gestire una mossa della regina durante una
 #### 3. **US18 – Mettere un re sotto scacco**
 Modellato per identificare stati di scacco (semplice o matto) e stallo in contesti di gioco avanzati, il flusso combina verifica statica (minacce immediate al re) e analisi dinamica (simulazione di tutte le mosse possibili). Attraverso loop annidati - sui pezzi disponibili e sulle loro mosse potenziali - determina se esista almeno una sequenza in grado di modificare la situazione critica. Struttura essenziale per gestire scenari complessi con molteplici pezzi interagenti.
 
-![scacco](scacco.jpg)
+![scacco](scacco.JPG)
 
 #### 4. **US6 – Uscita dal gioco**
 Il diagramma illustra il flusso di uscita da una partita e chiusura dell'applicazione tramite comando testuale `/esci`. Dopo l'acquisizione e l'analisi dell'input, il sistema richiede una conferma all'utente. Solo in caso di risposta affermativa procede con la terminazione, preservando così l'integrità della sessione di gioco ed evitando chiusure accidentali durante fasi critiche.
