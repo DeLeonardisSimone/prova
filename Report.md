@@ -429,22 +429,22 @@ Questa sezione documenta l'architettura tramite **flussi** di controllo. I diagr
 #### 1. **US2 – Avvio nuova partita**
 Modellato per gestire l'avvio di una partita su comando utente, il flusso mostra come il sistema risponda a `/gioca` generando tutte le entità necessarie in cascata: entità giocatore, contesto partita, scacchiera con tutti i pezzi, e moduli operativi. L'approccio garantisce che il gioco inizi sempre da uno stato controllato e verificato, pronto per ricevere le prime mosse.
 
-![iniziare_una_partita](./img/report/iniziare_partita.jpg)
+![iniziare_una_partita](iniziare_partita.jpg)
 
 #### 2. **US10 – Muovere la Donna**
 Questo schema illustra i passaggi per gestire una mossa della regina durante una partita già in corso, dove la scacchiera è stata modificata da diverse mosse precedenti. Le note integrative chiariscono come il sistema affronta due situazioni tipiche delle fasi intermedie di gioco: risolve eventuali ambiguità nell'identificare quale regina debba muoversi, in caso di uso della notazione algebrica corta o se esistono possibilità multiple, e gestisce correttamente la cattura dei pezzi avversari. Tale approccio garantisce il rispetto delle regole anche nelle situazioni più complesse, quando le interazioni tra i pezzi diventano più articolate e critiche per l'esito del gioco.
 
-![mossa_regina](./img/report/mossa_regina.jpg)
+![mossa_regina](mossa_regina.jpg)
 
 #### 3. **US18 – Mettere un re sotto scacco**
 Modellato per identificare stati di scacco (semplice o matto) e stallo in contesti di gioco avanzati, il flusso combina verifica statica (minacce immediate al re) e analisi dinamica (simulazione di tutte le mosse possibili). Attraverso loop annidati - sui pezzi disponibili e sulle loro mosse potenziali - determina se esista almeno una sequenza in grado di modificare la situazione critica. Struttura essenziale per gestire scenari complessi con molteplici pezzi interagenti.
 
-![scacco](./img/report/scacco.jpg)
+![scacco](scacco.jpg)
 
 #### 4. **US6 – Uscita dal gioco**
 Il diagramma illustra il flusso di uscita da una partita e chiusura dell'applicazione tramite comando testuale `/esci`. Dopo l'acquisizione e l'analisi dell'input, il sistema richiede una conferma all'utente. Solo in caso di risposta affermativa procede con la terminazione, preservando così l'integrità della sessione di gioco ed evitando chiusure accidentali durante fasi critiche.
 
-![uscita_dal_gioco](./img/report/esci.jpg)
+![uscita_dal_gioco](esci.jpg)
 
 ## 👨🏻‍💻 6. Riepilogo del test
 
